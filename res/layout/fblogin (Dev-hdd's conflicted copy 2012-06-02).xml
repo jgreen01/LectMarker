@@ -1,0 +1,12 @@
+
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1" android:layout_height="wrap_content" android:text="Email"></TextView>
+        <EditText android:layout_width="match_parent" android:id="@+id/editText1" android:layout_height="wrap_content" android:inputType="textEmailAddress">
+            <requestFocus></requestFocus>
+        </EditText>
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Password" android:layout_height="wrap_content" android:layout_marginTop="10dp"></TextView>
+        <EditText android:layout_width="match_parent" android:id="@+id/editText2" android:layout_height="wrap_content" android:inputType="textPassword"></EditText>
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView3" android:layout_height="wrap_content" android:text="Message" android:layout_marginTop="10dp"></TextView>
+        <EditText android:layout_width="match_parent" android:id="@+id/editText3" android:inputType="textMultiLine" android:layout_height="100dp"></EditText>
+        <Button android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="20dp" android:text="Post to Facebook"></Button>
+    </LinearLayout>

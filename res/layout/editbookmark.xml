@@ -1,0 +1,10 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/linearLayout1">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Bookmark Name" android:id="@+id/nameBM2"></TextView>
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/nameInput2">
+            <requestFocus></requestFocus>
+        </EditText>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Length" android:id="@+id/lengthText2"></TextView>
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/lengthInput2"></EditText>
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Delete" android:id="@+id/buttonDelete"></Button>
+    </LinearLayout>

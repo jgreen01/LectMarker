@@ -1,0 +1,21 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout2">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ButtonBack2" android:background="@drawable/back_icon" android:layout_marginRight="20dp" android:minWidth="40dp"></Button>
+            <TextView android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:id="@+id/recordingName" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ffff88"></TextView>
+        </LinearLayout>
+        <ListView android:layout_height="0dip" android:layout_weight="1" android:visibility="visible" android:transcriptMode="normal" android:layout_width="fill_parent" android:id="@+id/RBList"></ListView>
+        <LinearLayout android:layout_height="wrap_content" android:gravity="center" android:background="@drawable/bg" android:orientation="vertical" android:layout_width="fill_parent">
+            <LinearLayout android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent">
+                <LinearLayout android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal" android:layout_weight="1" android:layout_width="wrap_content">
+                    <Button android:layout_height="wrap_content" android:layout_marginTop="4dip" android:layout_width="wrap_content" android:id="@+id/ButtonRec" android:background="@drawable/s_rec" android:layout_marginRight="7dip"></Button>
+                    <TextView android:paddingLeft="7dip" android:layout_gravity="center" android:layout_height="wrap_content" android:textStyle="bold" android:textAppearance="?android:attr/textAppearanceMedium" android:paddingBottom="2dip" android:id="@+id/RnowTime" android:layout_width="wrap_content" android:text="00:00:00" android:layout_marginTop="3dp" android:paddingRight="7dip" android:layout_marginRight="5dp" android:textColor="#8c8d8d"></TextView>
+                    <Button android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="5dp" android:background="@drawable/s_bookmark" android:layout_width="wrap_content" android:id="@+id/ButtonBookmarkR" android:layout_marginLeft="5dip"></Button>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent">
+                <LinearLayout android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal" android:layout_gravity="top" android:layout_width="fill_parent">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout 	xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			android:id="@+id/frameLayout">
+    			
+    <RelativeLayout	android:layout_width="match_parent" 
+    				android:id="@+id/relativeLayout1" 
+    				android:layout_height="wrap_content">
+    	
+    	<Button	android:background="@drawable/back_icon" 
+    			android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content" 
+    			android:id="@+id/ButtonBack" />
+    			
+    	<TextView 	android:id="@+id/trackName" 
+    				android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+    				android:textAppearance="?android:attr/textAppearanceLarge"
+    				android:layout_alignParentTop="true"
+    				android:layout_centerHorizontal="true"
+    				android:layout_toRightOf="@+id/ButtonBack"
+    				android:text="TextView"
+    				android:layout_marginTop="8dip" android:textColor="#ffffff"/>
+    	
+    	<LinearLayout 		xmlns:android="http://schemas.android.com/apk/res/android"
+    						android:id="@+id/LLControls"
+	    			  		android:orientation="horizontal"
+	    			  		android:layout_width="wrap_content"
+	    			  		android:layout_height="wrap_content"
+	    			  		android:layout_weight = "1"
+	    			  		android:layout_centerHorizontal="true"
+	    			  		android:layout_alignParentBottom="true">
+	    			  		
+	    	<Button android:layout_width="wrap_content" 
+	    			android:layout_height="wrap_content" 
+	    			android:layout_marginLeft="5dip" 
+	    			android:layout_marginRight="5dip" 
+	    			android:layout_marginTop="4dip" 
+	    			android:id="@+id/ButtonPlayBook" 
+	    			android:background="@drawable/s_playbm"/>
+	    			  			    			  		      	
+	      	<Button android:layout_marginRight="5dip" 
+	      			android:layout_marginTop="4dip" 
+	      			android:layout_height="wrap_content" 
+	      			android:layout_width="wrap_content" 
+	      			android:background="@drawable/s_prev" 
+	      			android:layout_marginLeft="4dip" 
+	      			android:id="@+id/ButtonRwd"/> 
+			
+			<Button android:id ="@+id/ButtonPause"
+					android:layout_height = "wrap_content"
+					android:layout_width = "wrap_content"
+					android:layout_marginTop = "4dip"
+					android:layout_marginLeft = "5dip"
+					android:layout_marginRight="5dip" 
+					android:background="@drawable/s_pause"/>
+			
+			<Button android:layout_marginRight="5dip" 
+					android:layout_marginLeft="5dip" 
+					android:layout_marginTop="4dip" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:background="@drawable/s_next" 
+					android:id="@+id/ButtonFwd"/>
+			
+			<Button android:layout_marginRight="5dp" 
+					android:layout_marginLeft="5dp" 
+					android:layout_marginTop="4dp" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:id="@+id/ButtonBookmark" 
+					android:background="@drawable/s_bookmark"/>
+		</LinearLayout>
+		
+		<LinearLayout 	android:layout_height="wrap_content"
+	    			  	android:layout_width="fill_parent"
+	    			  	android:layout_centerHorizontal="true"
+	    			  	android:id="@+id/LLSeekBar"
+	    			  	android:layout_above="@+id/LLControls">
+	    	
+	    	<TextView	android:id="@+id/nowTime"
+	    				android:layout_height = "wrap_content"
+	    				android:layout_width ="wrap_content"
+	    				android:layout_gravity="center"
+	    				android:textSize="12dip"
+	    				android:textStyle="bold"
+	    				android:paddingLeft = "7dip"
+	    				android:paddingBottom = "2dip"
+	    				android:text = "0:00" android:textColor="#8c8d8d"/>
+	    	
+	    	<SeekBar	android:id="@+id/PBar"
+	    				android:layout_gravity="bottom"
+	    				android:progressDrawable ="@drawable/seekbar"
+	   			 		android:thumb="@drawable/slider"
+	    		    	android:layout_width="0dip"
+	     			   	android:layout_weight = "1"
+	    		    	android:layout_height="wrap_content"
+	    		    	android:maxHeight = "10dip"
+	    		    	android:max = "100"
+	     			   	android:paddingLeft = "10dip"
+	     			   	android:paddingRight = "10dip"
+	     			   	android:progress="0"
+	     			   	android:secondaryProgress="0"/>
+	    	
+	    	<TextView	android:id="@+id/allTime"
+	    				android:layout_height = "wrap_content"
+	    				android:layout_width ="wrap_content"
+	    				android:layout_gravity="center"
+	    				android:textSize="12dip"
+	    				android:textStyle="bold"
+	    				android:paddingRight = "7dip"
+	    				android:paddingBottom = "2dip"
+	    				android:text = "0:00" android:textColor="#8c8d8d"/> 
+	    </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

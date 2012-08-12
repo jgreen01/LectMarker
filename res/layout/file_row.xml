@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/linearLayout1" android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical" android:background="#000000">
+        <Button android:layout_height="wrap_content" android:background="@drawable/back_icon" android:minWidth="40dp" android:layout_marginRight="20dp" android:layout_width="wrap_content" android:id="@+id/ButtonBack3"></Button>
+        <ListView android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/audioList" android:textFilterEnabled="true"></ListView>
+    </LinearLayout>

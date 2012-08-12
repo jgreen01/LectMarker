@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bookmark Name" android:id="@+id/nameBM" android:paddingBottom="12dp"></TextView>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/nameInput">
+        <requestFocus></requestFocus>
+    </EditText>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lengthText" android:text="Length (Min:Sec)" android:paddingBottom="12dp"></TextView>
+    <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" android:layout_height="wrap_content">
+        <edu.umd.umich.lectmarker.lib.NumberPicker android:orientation="vertical" android:id="@+id/min" android:layout_width="wrap_content" android:layout_alignParentRight="false" android:layout_marginRight="10dp" android:layout_height="wrap_content"></edu.umd.umich.lectmarker.lib.NumberPicker>
+        <edu.umd.umich.lectmarker.lib.NumberPicker android:orientation="vertical" android:layout_width="wrap_content" android:id="@+id/sec" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="false" android:layout_toRightOf="@+id/min" android:layout_centerHorizontal="false"></edu.umd.umich.lectmarker.lib.NumberPicker>
+    </RelativeLayout>
+    <Button android:textSize="15dp" android:layout_marginTop="12dp" android:textColor="#ff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Audio Notes" android:id="@+id/AudioNote"></Button>
+    
+</LinearLayout>
